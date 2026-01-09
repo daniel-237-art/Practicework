@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="#">Gross Home</a>
+        <div class="navlinks">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </div>
+    <img src="../images/menus.png" alt="Menu" class="menu-horiz">
+    </nav>
+    <header></header> 
+</body>
+
+<script>
+    const menuHoriz = document.querySelector('.menu-horiz');
+    const navlinks = document.querySelector('.navlinks');
+
+    menuHoriz.addEventListener('click', () => {
+        navlinks.classList.toggle('navlinks-responsive');
+    });
+</script>
+</html>

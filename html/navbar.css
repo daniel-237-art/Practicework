@@ -1,0 +1,116 @@
+* {margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+
+}
+
+body {
+  font-family: 'Hina Mincho', sans-serif; 
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/ghlogo.png');
+    background-size: cover;
+
+}
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar a {
+    color: rgb(36, 27, 27);
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: rgb(137, 29, 29);
+}
+
+.navbar .menu-horiz {
+    display: none;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+}
+
+.navbar .navlinks ul {
+    display: flex;
+   
+}
+.navbar .navlinks ul li {
+    margin:0 30px;
+}
+
+.navbar .navlinks ul li.active a {
+  color: rgb(145, 38, 38);
+  font-weight: 600;
+}
+
+
+
+@media (max-width: 628px) {
+
+    .navbar{
+        padding: 0;
+    }
+    .navbar .menu-horiz {
+        display: block;
+    }
+  .navlinks {
+    position: absolute;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.226);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(7px);
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+
+   .navlinks.navlinks-responsive { 
+    margin-left: 0;
+
+}
+
+  .navlinks ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .navlinks ul li a {
+    margin: 50px 0;
+    font-size: 2em;
+  }
+
+   .navbar .navlinks ul li  {
+    margin: 30px 0;
+}
+.navbar .logo {
+   position: absolute;
+   top: 50px;
+   left: 30px;
+}
+   
+}

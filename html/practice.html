@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Gross Home</a>
+        <div class="navlinks">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </div>
+        <img src="../images/menus.png" alt="Menu" height="50px" width="50px" class="menu-horiz">
+    </nav>
+    <header></header>
+    <section class="hero">
+        <h1 class="hero-heading">Welcome to Gross Home</h1>
+        <p class="hero-subheading">Your one-stop shop for all things home</p>
+        <button class="hero-button">Shop Now</button>
+    </section>
+
+    <section class="form-section">
+        <h2>Contact Us</h2>
+        <form action="/submit" method="post" class="contact-form">
+
+            <div class="form-field"><label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="what's your name">
+            </div>
+
+            <div class="form-field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email here" required>
+            </div>
+
+            <div class="form-field">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="write about what you are interest in buying from us" required></textarea>
+            </div>
+
+            <button type="submit" class="form-button">Submit</button>
+        </form>
+    </section>
+</body>
+
+<script>
+    const menuHoriz = document.querySelector('.menu-horiz');
+    const navlinks = document.querySelector('.navlinks');
+
+    menuHoriz.addEventListener('click', () => {
+        navlinks.classList.toggle('navlinks-new');
+    });
+</script>
+</html>
